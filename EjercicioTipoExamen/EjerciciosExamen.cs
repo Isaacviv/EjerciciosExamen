@@ -262,5 +262,96 @@
             }
         }
 
+        // Ejercicio 22 hacer una funcion que imprima por pantalla todos los divisores desde 1 hasta el numero que se le pase
+        public static void Ejercicio22(int n)
+        {
+            for (int i = 1; i < n; i++)
+            {
+                if ((n % i) == 0)
+                    System.Console.Write(i + ",");
+            }
+        }
+
+        // Ejercicio 23
+        public static void Ejercicio23(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                int nespacios = n - r - 1;
+                int nespaciosintermedios = r * 2;
+                for (int c = 0; c < nespacios; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespaciosintermedios; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                System.Console.WriteLine();
+
+            }
+        }
+
+        // Ejercicio 24
+        public static void Ejercicio24(int n)
+        {
+            for (int r = 0; r < n; r++)
+            {
+                int nespacios1 = r;
+                int nespacios2 = (n - r - 1) * 2;
+                for (int c = 0; c < nespacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+        }
+
+        // Ejercicio 25
+        public static void Ejercicio25(int n)
+        {
+            Ejercicio23(n);
+            Ejercicio24(n);
+        }
+
+        // Ejercicio 26 hacer una funcion que devuelva 2 elevado a un numero entero
+        public static int Ejercicio26(int n)
+        {
+            int acumulado = 1;
+            for (int i = 0; i < n; i++)
+                acumulado *= 2;
+            return acumulado;
+            
+        }
+
+        // Ejercicio 27
+        public static void Ejercicio27()
+        {
+            for (int r = 0; r < 10; r++)
+            {
+                for (int c = 0; c < 20; c++)
+                {
+                    if (c >= 0 && c <= 6 && r <= 2 && r >= 0)
+                    {
+                        int flag = r + c;
+                        if ((flag % 2) == 0)
+                            System.Console.Write(".");
+                        else
+                            System.Console.Write(" ");
+                    }
+                    else if (((r / 2) % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write(" ");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        // Ejercicio 28
+        public static void Ejercicio28()
+        {
+            
+        }
     }
 }
