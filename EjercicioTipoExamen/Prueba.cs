@@ -1,0 +1,6 @@
+﻿namespace EjercicioTipoExamen
+{
+    class Prueba
+    {
+    }
+}
