@@ -348,10 +348,15 @@
             }
         }
 
-        // Ejercicio 28
-        public static void Ejercicio28()
+        // Ejercicio 28 hacer una funcion de devuelva el sumatoria de un numero
+        public static int Ejercicio28(int n)
         {
-            
+            int result = 0;
+            for (int i = 0; n < n; i++)
+            {
+                result += i;
+            }
+            return result;
         }
     }
 }
